@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW JS 32</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+    <body>
+
+    <div class="containerForMessages">
+<div class="messageWrapper">
+  <div class="message">
+    <div class="headerMessage">
+      <div class="userName">Name</div>
+      <div class="messageTime">10:05:00 22.03.2018</div>
+    </div>
+    <div class="bodyMessage">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  </div>
+</div>
+<div style="text-align: center; font-weight: bold;">Add New Messages:</div>
+<form class="formMessage" action="#">
+  <div><label>Your name: <input type="text" class="enterName"></label></div>
+  <div><label>Your message: <textarea cols="30" rows="1"></textarea></label></div>
+<input type="submit" class="sendMessage" value="Send">
+</form>
+</div>
+
+
+<div class="questWrapper">
+    <div class="quest active">
+    <p>Одной из причин смены предмета психологии с сознания на поведение явилось:</p>
+    <p><input type="radio" name="radio1" value="0">увеличение количества браков</p>
+    <p><input type="radio" name="radio1" value="1">урбанизация и производственный бум</p>
+    <p><input type="radio" name="radio1" value="0">сокращение числа разводов</p>
+    <p><input type="radio" name="radio1" value="0">демографический взрыв</p>
+    </div>
+    <div class="quest">
+    <p>Изучением индивидуальных различий между людьми занимается психология:</p>
+    <p><input type="radio" name="radio2" value="1">дифференциальная</p>
+    <p><input type="radio" name="radio2" value="0">интегративная</p>
+    <p><input type="radio" name="radio2" value="0">интегральная</p>
+    <p><input type="radio" name="radio2" value="0">личности</p>
+    </div>
+    <div class="quest">
+    <p>Психологическое направление, которое считает, что предмет психологии – это поведение как совокупность реакций организма на стимулы внешней среды, – это:</p>
+    <p><input type="radio" name="radio3" value="1">бихевиоризм</p>
+    <p><input type="radio" name="radio3" value="0">психология сознания</p>
+    <p><input type="radio" name="radio3" value="0">гуманистическая психология</p>
+    <p><input type="radio" name="radio3" value="0">психоанализ</p>
+    </div>
+    <button type="button" name="button" class="nextQuest">Следующий вопрос</button>
+    <button type="button" name="button" class="pushTestResult">Результат</button>
+    <p class="outTestResult"></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.booksUL li{
+  list-style-type: decimal;
+  margin-bottom: 5px;
+}
+.booksUL span:hover{
+  cursor: default;
+}
+.colored{
+  background: #fea789;
+}
+.btnsHints{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #000;
+  position: relative;
+}
+.btnsHints button{
+  height: 40px;
+  width: auto;
+}
+.btnsHints button:first-of-type{
+  margin-right: 10px;
+}
+.tooltip{
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  /* border-radius: 5px; */
+  /* border: 1px solid #000; */
+  display: block;
+  background: #8a52a6;
+  color: #fff;
+  text-align: center;
+  padding-top: 14px;
+}
+.tooltip:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #8a52a6;
+  bottom: 0px;
+  left: calc(50% - 10px);
+  position: absolute;
+  left: 42px;
+  top: 50px;
+}
+.divBooks{
+  width: 700px;
+  height: auto;
+  background: #faf1e9;
+}
+.topTooltip:after{
+  content: "";
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #8a52a6;
+  bottom: 0px;
+  left: calc(50% - 10px);
+  position: absolute;
+  left: 42px;
+  top: -12px;
+  transform: rotate(180deg);
+}

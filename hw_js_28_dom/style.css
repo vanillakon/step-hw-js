@@ -1,0 +1,36 @@
+*{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.hidden{
+  display: none;
+}
+.mainUL span{
+  cursor: pointer;
+  user-select: none;
+}
+.mainUL span:hover{
+  font-weight: bold !important;
+}
+.linksUL a{
+  text-decoration: none;
+}
+.linksUL li{
+  list-style-type: circle;
+}
+.linksUL a:hover{
+  cursor: default;
+}
+.booksUL li{
+  list-style-type: decimal;
+}
+
+.divUl, .divLinks{
+  background: #faf1e9;
+  height: auto;
+  width: 300px;
+}

@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+}
+.mainDiv{
+  height: 200px;
+  width: 568px;
+  background: #fbf2ea;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.trafficLight{
+  width: 400px;
+  height: 150px;
+  border-radius: 10px;
+  border: 2px solid #8a8a8a;
+  display: flex;
+  flex-direction: row;
+  padding: 22px;
+  margin-right: 25px;
+}
+.circle{
+  position: relative;
+  height: 103px;
+  width: 103px;
+  border-radius: 50%;
+  background: red;
+}
+.circle:before{
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 105px;
+  width: 105px;
+  background: #8a8a8a;
+  border-radius: 50%;
+}
+.circle:nth-child(2){
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.btnNext{
+  height: 150px;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  background: #f5f5f5;
+  box-shadow: 3px 3px 2px 0px rgba(138, 138, 138, 0.4);
+  cursor: pointer;
+  outline: none;
+  transition: all ease 0.3s;
+}
+.circle.opacity:before{
+  content: '';
+  width: 0;
+  height: 0;
+}

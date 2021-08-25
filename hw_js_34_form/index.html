@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW JS 34</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+    <body onload="outUserInfo()">
+      <div class="parentUserMessage hidden"></div>
+      <form onsubmit="return checkForm()" class="userForm">
+        <ul class="wrapper">
+          <li class="formRow">
+            <label for="userName">First name:</label>
+            <input type="text" id="userName" required>
+          </li>
+          <li class="formRow">
+            <label for="userSurname">Last name:</label>
+            <input type="text" id="userSurname" required>
+          </li>
+          <li class="formRow">
+            <label for="login">Login:</label>
+            <input type="text" id="login" required>
+          </li>
+          <li class="formRow">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+          </li>
+          <li class="formRow">
+            <label for="passwordConfirm">Confirm password:</label>
+            <input type="password" id="passwordConfirm" required>
+          </li>
+          <li class="formRow">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" required>
+          </li>
+          <li class="formRow">
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" required maxlength="6">
+          </li>
+          <li class="formRow">
+            <label for="code">Code:</label>
+            <input type="text" id="code" required maxlength="6">
+          </li>
+          <li class="formRow" style="padding-top: 1px;">
+            <input type="checkbox" id="check" required>
+            <label for="check">I accept the rules</label>
+          </li>
+          <li class="formRow">
+            <input type="submit" value="Register">
+          </li>
+        </ul>
+      </form>
+    </body>
+</html>

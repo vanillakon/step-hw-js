@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HW JS 33</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+    <body>
+    <div class="container">
+
+      <form action="#" class="formForText">
+        <div class="styles">
+          <input type="checkbox" id="bold" value="font-weight: bold;" data-value="font-weight">
+          <label for="bold">Bold</label>
+          <input type="checkbox" id="underline" value="text-decoration: underline;" data-value="text-decoration">
+          <label for="underline">Underline</label>
+          <input type="checkbox" id="italics" value="font-style: italic;" data-value="font-style">
+          <label for="italics">Italics</label>
+          <input type="radio" name="radio" id="left" value="text-align: left;">
+          <label for="left">Left</label>
+          <input type="radio" name="radio" id="right" value="text-align: right;">
+          <label for="right">Right</label>
+          <input type="radio" name="radio" id="justify" value="text-align: justify;">
+          <label for="justify">Justify</label>
+        </div>
+        <textarea name="name"></textarea>
+        <input type="submit" value="Show text" class="changeText">
+      </form>
+      <div class="resultWrapper hidden">
+        <div class="titleRes">Result:</div>
+        <div class="resultText"></div>
+      </div>
+
+
+      <div class="storeWrapper">
+      <div class="booksWrapper">
+          <div class="book">
+          <div class="bookCover" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/91dOB9d+zsL.jpg');"></div>
+          <div class="bookTitle"><span>Learning JavaScript: JavaScript Essentials for Modern Application Development</span>
+            <div class="bookAuthor">Ethan Brown</div>
+          </div>
+          <div class="bookPrice">16$</div>
+          <div class="bookSelect">
+            <button type="button" name="button" class="selectBtn">Select</button>
+          </div>
+        </div>
+        <div class="book">
+          <div class="bookCover" style="background-image: url('https://s1.livelib.ru/boocover/1001609349/o/1ed3/Kyle_Simpson__You_Donamp039t_Know_JS_Scope_ampamp_Closures.jpeg');"></div>
+          <div class="bookTitle"><span>You Don't Know JS: Scope & Closures</span>
+            <div class="bookAuthor">Kyle Simpson</div>
+          </div>
+          <div class="bookPrice">20$</div>
+          <div class="bookSelect">
+            <button type="button" name="button" class="selectBtn">Select</button>
+          </div>
+        </div>
+        <div class="book">
+          <div class="bookCover" style="background-image: url('https://images-na.ssl-images-amazon.com/images/I/418gTiosMbL.jpg');"></div>
+          <div class="bookTitle"><span>JavaScript and JQuery: Interactive Front-End Web Development</span>
+            <div class="bookAuthor">Jon Duckett</div>
+          </div>
+          <div class="bookPrice">22$</div>
+          <div class="bookSelect">
+            <button type="button" name="button" class="selectBtn">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="formWrapper">
+        <form class="buyingForm">
+          <ul>
+            <li class="formRow">
+              <label for="book">Book:</label>
+              <input type="text" id="book" class="sendInfo" placeholder="title book">
+            </li>
+            <li class="formRow">
+              <label for="quantity">Quantity:</label>
+              <input type="text" id="quantity" class="sendInfo" placeholder="number">
+            </li>
+            <li class="formRow">
+              <label for="name">Name:</label>
+              <input type="text" id="name" class="sendInfo" placeholder="name surname">
+            </li>
+            <li class="formRow">
+              <label for="address">Delivery address:</label>
+              <textarea id="address" class="sendInfo" placeholder="street house"></textarea>
+            </li>
+            <li class="formRow">
+              <label for="date">Delivery date:</label>
+              <input type="text" id="date"class="sendInfo" placeholder="date.month.year">
+            </li>
+            <li class="formRow">
+              <label for="comment">Comment:</label>
+              <textarea id="comment" class="sendInfo" placeholder="optional field"></textarea>
+            </li>
+            <li class="formRow">
+              <input type="submit" value="Buy" name="button" class="buyBook">
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+      <div class="infoAboutOrder hidden">
+        <div class="titleInfo">Result:</div>
+        <div class="infoAbout"></div>
+      </div>
+
+      <div class="classWrapper">
+        <div class="groupsWrapper">
+          <label for="select1">Group:</label>
+          <select class="selectGroup" id="select1">
+            <option value="group1">Group 1</option>
+            <option value="group2">Group 2</option>
+            <option value="group3">Group 3</option>
+          </select>
+          <label for="select2">Lesson:</label>
+          <select class="selectLesson" id="select2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <input type="button" value="Select" class="selectGroupAndLesson">
+          </select>
+        </div>
+        <div class="studentsWrapper hidden">
+        </div>
+      </div>
+
+      <div class="trainTicketsWrapper">
+        <div class="selectTrainWrapper">
+          <label for="selectDirection">Direction:</label>
+          <select id="selectDirection">
+            <option value="odessa-lviv">Odessa - Lviv</option>
+            <option value="odessa-kyiv">Odessa - Kyiv</option>
+            <option value="odessa-mykolaiv">Odessa - Mykolaiv</option>
+          </select>
+          <label for="dateTour">Date:</label>
+            <input type="date" id="dateTour">
+          <input type="button" value="Search" class="searchTickets">
+          </select>
+        </div>
+        <div class="carriageWrapper"></div>
+        <div class="buingTicketsWrapper hidden">
+          <p><span>Total price:</span><span class="totalPrice"></span><span>$</span></p>
+          <button type="button" name="button" class="bookingTickets">Book</button>
+        </div>
+        <div class="outMyTickets hidden"></div>
+      </div>
+
+
+
+
+    </div>
+    </body>
+</html>

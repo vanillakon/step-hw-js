@@ -1,0 +1,109 @@
+*{
+  box-sizing: border-box;
+  font-family: Georgia, sans-serif;
+}
+html, body{
+  height: 100%;
+}
+.parentTable{
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  background: #faf1e9;
+}
+th, td{
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #000;
+  text-align: center;
+}
+th:hover{
+  cursor: pointer;
+}
+.resizeBlock{
+  width: 380px;
+  height: 150px;
+  position: relative;
+  border: 1px solid #000;
+  /* margin: 20px 0 20px 0; */
+  overflow: hidden;
+  padding: 10px;
+  text-align: justify;
+}
+.subResizeBlock{
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 8px solid transparent; border-right: 8px solid grey; border-bottom: 8px solid grey;
+}
+.subResizeBlock:hover{
+  cursor: nwse-resize;
+}
+.rangeValue{
+  width: auto;
+  height: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.resizeWrapper{
+  background: #faf1e9;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  /* overflow: hidden; */
+}
+.trackBar{
+  width: 200px;
+  height: 20px;
+  /* margin-top: 10px; */
+  background: #faf1e9;
+}
+
+.roadTrack{
+  width: 200px;
+  height: 10px;
+  border: 1px solid #000;
+  position: relative;
+  background: #d6d6d6;
+}
+.pointer{
+  height: 20px;
+  width: 10px;
+  background: purple;
+  position: absolute;
+  left: 50px;
+  top: -6px;
+}
+.slider{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: 150px;
+  margin-top: 20px;
+  padding: 20px;
+  background: #faf1e9;
+  justify-content: space-around;
+}
+.slider img{
+  width: 128px;
+  height: 128px;
+}
+.leftBtn, .rightBtn{
+  width: 100px;
+  height: 40px;
+  margin-top: 35px;
+  border: none;
+  border-radius: 5px;
+  user-select: none;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}

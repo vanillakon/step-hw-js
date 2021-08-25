@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-family: Georgia, sans-serif;
+}
+.wrapper, .wrapper2, .calendarWrapper{
+  width: 500px;
+  height: auto;
+  background: #fbf2e9;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.hidden{
+  display: none;
+}
+.wrapper ul{
+  list-style-type: none;
+  border: 2px solid #243e53;
+  border-bottom: none;
+}
+.wrapper li{
+  border-bottom: 2px solid #243e53;
+  height: 35px;
+  background: #518cbb;
+  padding: 10px;
+  color: #fff;
+}
+.titleLi{
+  padding-top: 20px !important;
+  padding-bottom: 5px !important;
+  user-select: none;
+}
+.titleLi:hover{
+  cursor: pointer;
+}
+.spyLi{
+  height: auto !important;
+  background: #b5dce9 !important;
+  color: #243e53 !important;
+}
+
+.scrollTextParent{
+  height: 200px;
+  width: 500px;
+  overflow-y: scroll;
+  padding: 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.scrollText h4{
+  margin-bottom: 10px;
+}
+.scrollText, .scrollTextParent{
+  background: #fbf2e9;
+}
+
+td, th {
+  border: 1px solid #000;
+  width: 68px;
+  height: 50px;
+  text-align: center;
+}
+.btnGenerate{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+
+}
+.outMonth{
+  margin-bottom: 10px;
+}
+
+.dateWrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.dateWrapper div{
+  width: 50%;
+}
+.dateWrapper input{
+  width: 185px;
+  outline: none;
+}
+.dateWrapper div:last-of-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.wrapper2.row{
+  width: 500px;
+  height: auto;
+  padding: 0 10px 0 10px;
+  border: 2px solid #243e53;
+}
+.div1{
+  padding-left: 10px;
+  padding-top: 20px;
+  width: calc(97% + 1px);
+  height: 35px;
+  border: 2px solid #243e53;
+  color: #fff;
+  background: #518cbb;
+}
+.div2{
+  padding: 10px;
+  border-right: 2px solid #243e53;
+  border-left: 2px solid #243e53;
+  border-bottom: 2px solid #243e53;
+  background: #b5dce9;
+  color: #243e53;
+}
+.row:not(.active) .div2{
+  display: none;
+}
+.row.active .div2{
+  border-bottom: none;
+}
+.row:not(.active) .div1{
+  border-bottom: none;
+}
+.row:last-of-type{
+  border-bottom: 2px solid #243e53;
+}
+.row.div2:not(:last-child){
+  border-bottom: none;
+}

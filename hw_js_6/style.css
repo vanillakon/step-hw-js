@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  min-height: 100%;
+  background: #f5f5f5;
+  padding-top: 50px;
+}
+.form_style{
+  margin: 0 auto;
+  width: 580px;
+  height: auto;
+  background: #9fcdcd;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px 40px;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.top_col, .mid_col{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.input_style{
+  display: block;
+  border: none;
+  border-bottom: 1px solid #466c6f;
+  height: 48px;
+  width: 374px;
+  background: #a9d2d2;
+  position: relative;
+  margin-left: 0;
+  padding-left: 12px;
+  font-size: 16px;
+  outline: none;
+}
+button{
+  height: 48px;
+  width: 100%;
+  border: 1px solid #466c6f;
+  background: #a9d2d2;
+  color: #466c6f;
+  padding: 10px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+}
+.input_style:not(:last-of-type){
+  margin-bottom: 24px;
+}
+.input_style::placeholder{
+  /*color: #779fa0;*/
+  color: #000;
+}
+.label_style{
+  color: #466c6f;
+  font-size: 14px;
+}
+.input_style__modification{
+  display: inline-block;
+  width: 108px;
+  position: relative;
+  margin: 0;
+  margin-top: 30px;
+}
+.input_style__modification:not(:last-of-type){
+  margin-right: 20px;
+}
+.firstSelectOfCash, .secondSelectOfCash{
+  width: 100px;
+  height: 30px;
+  /* display: block;
+  border: none;
+  border: 1px solid #466c6f; */
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #466c6f;
+  height: 48px;
+  width: 177px;
+  background: #a9d2d2;
+  position: relative;
+}
+.firstSelectOfCash{
+  margin-right: 20px;
+}
+
+td, th{
+  width: 54px;
+  height: 40px;
+  border: 1px solid #466c6f;
+  text-align: center;
+}
+th{
+  color: red;
+}
+td:first-child{
+  color: red;
+  font-weight: bold;
+}

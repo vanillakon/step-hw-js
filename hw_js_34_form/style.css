@@ -1,0 +1,47 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+.hidden{
+  display: none;
+}
+.userForm, .parentUserMessage{
+  width: 500px;
+  height: auto;
+  border: 1px solid #000;
+  background: #fbf2e9;
+  padding: 10px;
+  font-size: 20px;
+}
+.parentUserMessage *{
+  margin-bottom: 10px;
+}
+.parentUserMessage button{
+  width: 100px;
+  height: 30px;
+}
+.wrapper{
+  list-style-type: none;
+  padding: 0;
+}
+.formRow{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  height: 30px;
+}
+.formRow label{
+  flex: 1;
+}
+.formRow input:not(input[type="checkbox"]){
+  flex: 2;
+}
+input[type="checkbox"]{
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-left: 158px;
+}

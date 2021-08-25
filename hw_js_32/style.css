@@ -1,0 +1,95 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+
+.containerForMessages{
+  width: 700px;
+  height: auto;
+  padding: 10px;
+  background: #fbf2e9;
+  margin-bottom: 30px;
+}
+.messageWrapper{
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+.message{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+.formMessage{
+  padding: 10px;
+}
+.enterName{
+  margin-left: 24px;
+  margin-bottom: 10px;
+  width: 557px;
+  height: 30px;
+}
+.formMessage textarea{
+  margin-left: 4px;
+  width: 557px;
+  height: 30px;
+}
+.sendMessage{
+  outline: none;
+  height: 30px;
+  width: 100%;
+  margin-top: 15px;
+}
+.bodyMessage{
+  text-align: justify;
+  padding: 10px;
+}
+.userName, .messageTime{
+  padding: 10px;
+}
+.headerMessage{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px dotted grey;
+  justify-content: space-between;
+}
+
+.messageTime{
+  text-align: right;
+}
+
+.quest:not(.active){
+  display: none;
+}
+.pushTestResult{
+  display: none;
+}
+
+.questWrapper{
+  height: auto;
+  background: #fbf2e9;
+  width: 700px;
+  padding: 20px;
+}
+.quest p:first-child, p:last-child{
+  margin-bottom: 10px;
+}
+.quest p:first-of-type{
+  font-weight: bold;
+}
+.nextQuest,.pushTestResult{
+  outline: none;
+  height: 30px;
+  width: 150px;
+  margin-bottom: 15px;
+}
+input[type='radio']{
+  margin-right: 10px;
+  margin-bottom: 5px;
+}

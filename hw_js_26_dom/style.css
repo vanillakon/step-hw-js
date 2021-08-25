@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+html, body{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.footballField{
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  border: 4px solid #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 50px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: row;
+}
+.fieldColor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.coloredGreen{
+  background: green;
+  height: 100%;
+  width: calc(100% / 20);
+}
+.coloredLightGreen{
+  background: lightgreen;
+  height: 100%;
+  width: calc(100% / 20);
+}
+.ball{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url(icons/ball.png);
+  background-position: center;
+  background-size: 112px;
+  z-index: 9999;
+}
+.leftField, .rightField{
+  height: 100%;
+  width: calc(100% / 2);
+}
+.leftField{
+  border-right: 2px solid #fff;
+}
+.rightField{
+  border-left: 2px solid #fff;
+}
+.gates{
+  width: 40px;
+  height: calc(100% / 5);
+  border: 4px solid #fff;
+  position: absolute;
+  top: calc((100% / 2) - calc((100% / 5) / 2));
+}
+.leftGate{
+border-right: none;
+left: -40px;
+}
+.rightGate{
+border-left: none;
+right: -40px;
+}
+.leftGate2, .rightGate2{
+  width: calc(100% / 20);
+  height: calc(100% / 3);
+  top: calc((100% / 2) - calc((100% / 3) / 2));
+}
+
+.leftGate3, .rightGate3{
+  width: calc(100% / 8);
+  height: calc(100% / 2);
+  top: calc((100% / 2) - calc((100% / 2) / 2));
+}
+.rightGate2, .rightGate3{
+  right: 0;
+}
+.leftGate2,.leftGate3{
+  border-left: none;
+}
+.rightGate2, .rightGate3{
+  border-right: none;
+}
+.dot{
+  position: absolute;
+  top: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #fff;
+  top: calc(100% / 2 - 5px);
+}
+.dot1{
+  left: calc(100%  - calc(100% / 3));
+}
+.dot2{
+  right: calc(100%  - calc(100% / 3));
+}
+.dot3{
+  left: calc(100% - calc(100% / 2 + 5px));
+}
+.centerCircle{
+  border-radius: 50%;
+  border: 4px solid #fff;
+  height: 160px;
+  width: 160px;
+  position: absolute;
+  top: calc(100% / 2 - 80px);
+  left: calc(100% - calc(100% / 2 + 80px));
+}
+.centerCircle2, .centerCircle3{
+  /* border-radius: 50%; */
+  border: 4px solid #fff;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  /* height: 120px;
+  width: 120px; */
+  height: 100px;
+  width: calc(100% / 50);
+  position: absolute;
+  top: calc(100% / 2 - 60px);
+  /* left: calc(100% - calc(100% / 2 + 90px)); */
+}
+.centerCircle2{
+  left: calc(100%  - calc(100% / 7));
+  transform: rotate(180deg);
+  border-left: none;
+}
+.centerCircle3{
+  right: calc(100%  - calc(100% / 7));
+  border-left: none;
+}
+.cornerCircle{
+  border: 4px solid #fff;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  height: 12px;
+  width: 6px;
+  position: absolute;
+}
+.cornerCircle1{
+  transform: rotate(40deg);
+  border-left: none;
+  left: 0px;
+  top: -3px;
+}
+.cornerCircle2{
+  transform: rotate(-40deg);
+  border-left: none;
+  left: 0px;
+  bottom: -3px;
+}
+.cornerCircle3{
+  transform: rotate(120deg);
+  border-left: none;
+  right: 0;
+  top: -3px;
+}
+.cornerCircle4{
+  transform: rotate(-120deg);
+  border-left: none;
+  right: 0;
+  bottom: -3px;
+}

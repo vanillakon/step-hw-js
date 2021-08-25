@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let elems = document.querySelectorAll(".datepicker");
+        let instances = M.Datepicker.init(elems, {
+          format: "dd/mm/yyyy",
+        });
+      });
+    </script>
+    <title>Date</title>
+  </head>
+  <body onload="showDate()">
+    <div class="container">
+      <input type="text" class="datepicker" placeholder="Выберите дату" />
+      <table class="table">
+        <tr>
+          <th>Текущая дата:</th>
+          <th>Будущая дата:</th>
+          <th>Высокосный год:</th>
+          <th>Следующая дата:</th>
+        </tr>
+      </table>
+    </div>
+
+    <script src="ExtendedDate.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

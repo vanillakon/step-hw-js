@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function () {
+      let elems = document.querySelectorAll("select");
+      let instances = M.FormSelect.init(elems);
+      });
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Marker</title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s5">
+            <input id="text" type="text" class="validate inp">
+            <label for="text">Text</label>
+            <a class="waves-effect waves-light btn primary"><i class="material-icons right">create</i>write</a>
+          </div>
+          <div class="input-field col s2">
+            <select class="sel" id="sel" name="select">
+              <option value="black" selected>Black</option>
+              <option value="red">Red</option>
+              <option value="green">Green</option>
+              <option value="yellow">Yellow</option>
+              <option value="blue">Blue</option>
+              <option value="orange">Orange</option>
+            </select>
+          </div>
+          <div class="input-field col s5">
+            <input id="ink" type="number" class="validate inp2" max="100" min="0">
+            <label for="ink">Ink</label>
+            <a class="waves-effect waves-light btn danger"><i class="material-icons right">invert_colors</i>Refill</a>
+          </div>
+        </div>
+    </div>
+    <div class="out">
+    </div>
+    </div>
+    <script src="Marker.js"></script>
+    <script src="MarkerOnSteroids.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
